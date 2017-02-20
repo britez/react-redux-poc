@@ -8,6 +8,7 @@ export const COUNTER_DOUBLE_ASYNC = 'COUNTER_DOUBLE_ASYNC'
 // Actions
 // ------------------------------------
 export function increment (value = 0) {
+  console.log('Increment! ' + value)
   return {
     type    : COUNTER_INCREMENT,
     payload : value
@@ -51,6 +52,6 @@ const ACTION_HANDLERS = {
 const initialState = 0
 export default function counterReducer (state = initialState, action) {
   const handler = ACTION_HANDLERS[action.type]
-  console.log('Reducer!')
+  console.log('Call to reducer!')
   return handler ? handler(state, action) : state
 }

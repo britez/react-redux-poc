@@ -8,6 +8,10 @@ const compress = require('compression')
 
 const app = express()
 
+const proxy = require('express-http-proxy');
+
+app.use('/api', proxy('http://localhost:8080/'));
+
 // Apply gzip compression
 app.use(compress())
 

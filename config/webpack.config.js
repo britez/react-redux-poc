@@ -21,6 +21,21 @@ const webpackConfig = {
   },
   module : {}
 }
+
+
+webpackConfig.proxy = {
+  '/api': {
+     target: {
+        host: "0.0.0.0",
+        protocol: 'http:',
+        port: 8080
+     },
+     pathRewrite: {
+        '^/api': ''
+      }
+   }
+}
+
 // ------------------------------------
 // Entry Points
 // ------------------------------------
