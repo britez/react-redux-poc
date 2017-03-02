@@ -2,8 +2,8 @@ import React from 'react'
 import './bonifications.scss'
 
 import SearchComponent from './Search'
-import ActionsContainer from '../containers/ActionsContainer'
-import BonificationListContainer from '../containers/BonificationListContainer'
+import ActionsContainer from '../containers/actionsContainer'
+import BonificationListContainer from '../containers/bonificationListContainer'
 
 export const Bonification = (props) => (
   <div id='bonifications'>
