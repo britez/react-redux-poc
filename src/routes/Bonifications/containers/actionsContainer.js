@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { showSpecialBonificationModal } from '../modules/specialBonification'
 
-import ActionsComponent from '../components/Actions'
+import ActionsComponent from '../components/ActionsCmp'
 
 const mapStateToTodoListProps = (state, ownProps) => {
   console.log(state.specialBonification.isShow)

@@ -17,7 +17,9 @@ let SearchComponent = ({ dispatch }) => {
           (event) => {
             if (event.key === 'Enter') {
               console.log('Make search!');
-              dispatch(search(input.vale));
+              dispatch(
+                search(input.value)
+              );
             }
           }
         }/>

@@ -33,8 +33,8 @@ export const addTodo = (text) => {
 };
 
 export const setVisibilityFilter = (filter) => ({
-  type: SET_VISIBILITY_FILTER,
-  filter
+    type: SET_VISIBILITY_FILTER,
+    filter
 });
 
 
