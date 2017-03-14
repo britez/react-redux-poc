@@ -1,7 +1,7 @@
 import React from 'react'
 import './bonifications.scss'
 
-import SearchComponent from './Search'
+import SearchComponent from './../containers/SearchCnt'
 import ActionsContainer from '../containers/actionsContainer'
 import BonificationListContainer from '../containers/bonificationListContainer'
 

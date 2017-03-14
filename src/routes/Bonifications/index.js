@@ -9,7 +9,7 @@ export default (store) => ({
     require.ensure([], (require) => {
       /*  Webpack - use require callback to define
           dependencies for bundling   */
-      const Bonification = require('./components/Bonification').default
+      const Bonification = require('./components/BonificationCmp').default
       const reducer = require('./modules/bonification').default
       const specialBonificationReducer = require('./modules/specialBonification').default
       const bonificationModalReducer = require('./modules/bonification').bonificationModalReducer

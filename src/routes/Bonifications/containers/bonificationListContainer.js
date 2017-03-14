@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 
 import { TOGGLE_BONIFICATION_MODAL, toggleBonificationModal, createBonification } from '../modules/bonification'
 
-import BonificationList from '../components/BonificationList'
+import BonificationList from '../components/BonificationListCmp'
 
 const mapStateToTodoListProps = (state) => {
   console.log(state);
